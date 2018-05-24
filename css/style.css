@@ -1,0 +1,268 @@
+body {
+    margin: 0 auto;
+    width: 1920px;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 40), rgb(0, 0, 140)); 
+}
+
+/*@font-face {
+    font-family: Sans;
+    src: url(/fonts/PT_Sans-Web-Regular.ttf);    
+}
+
+@font-face {
+    font-family: sans-bold;
+    src: url(/fonts/PT_Sans-Web-Bold.ttf);
+}
+
+@font-face {
+    font-family: sans-ibold;
+    src: url(/fonts/PT_Sans-Web-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: sans-italic;
+    src: url(/fonts/PT_Sans-Web-Italic.ttf);
+}
+*/
+header {
+    width: 100%;
+    height: 180px;
+    background-color: #F0E68C; 
+}
+
+#header {
+    width: 980px;
+    margin-left: 22%;
+    background-size: cover;
+    background-color: #F0E68C;
+}
+
+.header_div1 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 490px;
+    height: 180px;
+}
+
+.header_div2 {
+    position: relative;
+    display: inline-block;
+    width: 490px;
+    height: 180px;
+}
+
+
+#header_logo {
+    float: left;
+    height: 100px;
+    width: 130px;
+    padding-left: 20%;
+    padding-top: 40px; 
+}
+
+#name {
+    padding-left: 45%;
+    padding-top: 3%;
+    width: 200px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#description {
+    padding-left: 45%;
+    width: 200px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#phone_number {
+    /*vertical-align: middle;*/
+    margin-top: 11%;
+    margin-right: 10%;
+    text-align: right;
+    font-size: 25px;
+}
+
+nav {
+    clear: both;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+nav a {
+    display: inline-block;  
+    text-align: center;
+    padding: 5px 10px;
+    margin: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    border-right: 1px solid black;
+    overflow: hidden;
+    width: 6%;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.banner {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.animate {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    animation: fading 10s infinite;
+}
+@keyframes fading{0%{opacity:0.04}50%{opacity:1}100%{opacity:0.04}}
+
+.content {
+    width: 980px;
+    height: 650px;
+    margin-left: 25%;
+    background: #F0E68C;
+}
+
+#content_left {
+    position: relative;
+    display: inline-block;
+    width: 440px;
+    float: left;
+}
+
+#news {
+    position: relative; 
+    height: 450px;
+    width: 300px;
+    background: radial-gradient(60% 90%, rgb(0, 0, 80), rgb(0, 0, 40));
+    margin-left: 25%;
+    color: white;
+}
+
+#news h1 {
+    margin-left: 13%;
+}
+
+#content_list {
+    list-style: none;
+}
+
+#content_list li {
+    padding-bottom: 10px;
+}
+
+#date {
+    font-style: italic;
+}
+
+#archive {
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 30px;
+    font-size: 13px;
+}
+
+#archive_color:link, #archive_color:visited {
+    color: white;
+}
+
+#content_right {
+    position: relative;
+    display: inline-block;
+    width: 540px;
+}
+
+#content_right p, h1 {
+    padding-right: 100px;
+}
+
+/*контакти*/
+footer {
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(40% 80%, rgb(0, 0, 80), rgb(0, 0, 40)); 
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    margin-left: 27%; 
+    position: relative;
+    width: 980px;
+    height: 210px;
+    display: block; 
+    border-bottom-width: 0;
+}
+
+#footer div {
+    position: relative; 
+    width: calc(33.33% - 60px); 
+    margin: 30px;
+    height: 170px;
+    float: left;
+}
+
+#foot {
+    border-bottom: 1px solid black;
+}
+
+#footer div ul {
+    padding-left: 20px;
+}
+
+#footer div p {
+    padding-left: 45px;
+    color: white;
+}
+
+#by {
+    color: white;
+    padding-right: 15px;
+}
+
+#footer div ul li {
+    list-style: none;
+    padding: 5px;
+    color: white;
+}
+
+.footer_menu li a:link, .footer_menu li a:visited {
+    color: white;
+    padding: 2px;
+}
+
+#footer_logo {
+    float: left;
+    height: 35px;
+    width: 35px;
+    padding-top: 5%;
+}
+
+.backtotop {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+}
+
+#arrow {
+    display: none;
+}

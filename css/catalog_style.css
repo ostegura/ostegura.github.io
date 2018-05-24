@@ -1,0 +1,50 @@
+center {
+    margin-left: 25%;
+    position: relative;
+    width: 980px; 
+    margin-top: 0;
+}
+
+.catalog {
+    position: relative; 
+    display: block; 
+    overflow: hidden;
+    width: 970px; 
+    border-bottom-width: 0;
+}
+
+.catalog div {
+    position: relative; 
+    width: 280px; 
+    margin: 20px; 
+    height: 300px;
+    border-width: 2px; 
+    border: groove;
+    border-color: #999; 
+    border-left: 0; 
+    border-right: 0; 
+    float: left;
+}
+
+#photo {
+    display: block;
+    height: 200px;
+    width: 240px; 
+    background-size: cover;
+    margin: 10px 10px 10px 10px;
+    border: groove;
+    border-width: 2px;
+    border-color: rgb(25, 5, 110);
+}
+#bike {
+    margin: 10px 10px 10px 10px;
+    height: 170px;
+    width: 240px;
+}
+
+.catalog div h3 {
+    text-align: left; 
+    padding: 0 20px;
+    font-family: sans-serif;
+    color: white;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SS88 motoshop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/delivery_style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <div class="header_div1">
+                    <img id="header_logo" alt="Магазин" src="images/logo.png">
+                    <p id="name">SS88 Motoshop</p>
+                    <p id="description">Наилучшее соотношение цены и качества только в нашем магазине!</p>
+                </div>
+                <div class="header_div2">
+                    <p id="phone_number">+38(099) 95-22-337<br>+38(099) 95-33-228</p>
+                </div> 
+            </div>
+        </header>
+        <nav>
+            <a href = "index.html">Главная</a>
+            <a href = "catalog.html">Каталог</a>
+            <a class="go_to" href = "#main_info">Доставка</a>
+            <a href = "catalog.html">Прайс-лист</a>
+            <a class="go_to" href = "#header">Контакты</a>
+        </nav>
+       <div class="slider">
+            <img class="banner animate" src="images/banner1.jpg" height="100%" width="100%">
+            <img class="banner animate" src="images/banner2.jpg">
+            <img class="banner animate" src="images/banner3.jpg">
+            <img class="banner animate" src="images/banner4.jpg">
+            <img class="banner animate" src="images/banner5.jpg">
+        </div>
+        <script src="script/banner.js"></script>
+        <div class="content" id="main_info">
+           <div id="delivery">
+                <h2><span id="way">Способы доставки</span></h2>
+                   <ul id="list">
+                       <li>Пункты самовывоза<br>Самовывоз товара по адресу г. Киев ул. Глушкова 6Д. Необходимо согласование времени Вашего визита с нашим менеджером.</li><br>
+                       <li>Новая Почта<br>Заказ будет доставлен в течении нескольких рабочих дней на указанный Вами адрес или склад Новой почты в Вашем городе. Стоимость доставки и возврата денег (в случае наложенного платежа) расчитывается по тарифам Новой почты и оплачивается отдельно.</li><br>
+                       <li>Почтоматы Приватбанка</li>
+                   </ul>
+           </div>
+           <div id="paying">
+               <h2><span id="way">Способы оплаты</span></h2>
+               <ul id="list">
+                   <li>Наличными по факту доставки<br>Для товаров имеющих статус "В наличии". Оплата при получении товара курьеру или на складе службы доставки</li><br>
+                   <li>Перевод на карту Приват банк<br>После согласования с нашим менеджером, просьба перевести указанную сумму на карту Приват (через банкомат или систему Privat24). Номер карты Вам сообщат менеджеры, также Вы его получите по электронной почте после оформления заказа.</li><br>
+                   <li>Счет на e-mail (Visa, Mastercard, Privat24)<br>После оформления заказа, проверки наличия товара и согласования с Вами условий доставки, на указанный Вами e-mail будет выслан счет на оплату, который Вы можете оплатить картой Visa/MasterCard или через Privat24. Доставка товара оплачивается отдельно.</li><br>
+                   <li>Оплата картой Visa, Mastercard - LiqPay</li><br>
+                   <li>Покупка без риска</li>
+               </ul>
+           </div>
+           <div id="garantee">
+               <h2><span id="way">Гарантия:</span></h2>
+               <p>Условия гарантии зависят от приобретенного Вами товара. В любом случае сохранение товарного чека и упаковки товара - обязательно.</p>
+           </div>
+        </div>
+        <center>
+            <div class="delivery_catalog">
+                <div>
+                    <img id="delivery_photo" src="images/privat24.jpg">
+                </div>
+                <div>
+                    <img id="delivery_photo" src="images/delivery.jpg">
+                </div>
+                <div>
+                    <img id="delivery_photo" src="images/grnt.jpg">
+                </div>
+        </center>
+        <footer>
+            <div id="footer">
+                <div>
+                   <p>(c) 2018 ПП "SS88 Motoshop"<br>ss88motoshop@mx.com</p>
+                </div>
+                <div>
+                    <ul class="footer_menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a class="go_to" href="#main_info">Доставка и оплата</a></li>
+                        <li><a href="catalog.html">Прайс-лист</a></li>
+                        <li><a class="go_to" href="#header">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img id="footer_logo" src="images/footer_logo.png">
+                    <p id="by"><span id="foot">Разработка сайта</span> -<br>компания "Stegura - 100 points."</p>         
+                </div>    
+            </div>        
+        </footer>
+         <div class="backtotop">
+            <a class="go_to" href="#header"><img id="arrow" src="images/backtotop.png" width="50px"></a>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+        $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+        var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+            if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 900); // анимируем скролинг к элементу scroll_el
+            }
+            return false; // выключаем стандартное действие
+        });
+            });
+
+        jQuery(function(f){
+            var element = f('#arrow');
+            f(window).scroll(function(){
+                element['fade'+ (f(this).scrollTop() > 250 ? 'In': 'Out')](300);           
+            });
+        });
+    </script>
+</html>

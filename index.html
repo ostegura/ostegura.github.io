@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SS88 motoshop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <div class="header_div1">
+                    <img id="header_logo" alt="Магазин" src="images/logo.png">
+                    <p id="name">SS88 Motoshop</p>
+                    <p id="description">Наилучшее соотношение цены и качества только в нашем магазине!</p>
+                </div>
+                <div class="header_div2">
+                    <p id="phone_number">+38(099) 95-22-337<br>+38(099) 95-33-228</p>
+                </div> 
+            </div>
+        </header>
+        <nav>
+            <a href = "#header">Главная</a>
+            <a href = "catalog.html">Каталог</a>
+            <a href = "delivery.html">Доставка</a>
+            <a href = "catalog.html">Прайс-лист</a>
+            <a href = "#header">Контакты</a>
+        </nav>
+        <div class="slider">
+            <img class="banner animate" src="images/banner1.jpg" height="100%" width="100%">
+            <img class="banner animate" src="images/banner2.jpg">
+            <img class="banner animate" src="images/banner3.jpg">
+            <img class="banner animate" src="images/banner4.jpg">
+            <img class="banner animate" src="images/banner5.jpg">
+        </div>
+        <script src="script/banner.js"></script>
+        <div class="content">
+            <div id="content_left">
+                <div id="news">
+                    <h1>Новости</h1>
+                    <ul id="content_list">
+                        <li><span id="date">14 мая 2017 г.</span><br> Выход модельного ряда 2018 марки KTM.</li>
+                        <li><span id="date">1 июня 2017 г.</span><br> Представлен новая линейка шлемов Shoei.</li>
+                        <li><span id="date">23 июля 2017 г.</span><br> В продажу поступает линейка формы Fox Gold 360 Limited Edition.</li>
+                        <li><span id="date">1 сентября 2017 г.</span><br> Компания "Monster energy"&"Red Bull" выпустили в продажу повседневную одежду модельного ряда 2018.</li>
+                        <p id="archive"><a href="#" id="archive_color">Архив новостей</a></p>
+                    </ul>
+                </div>
+            </div>
+            <div id="content_right">
+                <h1>Магазин "SS88 Motoshop"</h1>
+                <p>Мы рады Вас приветствовать в лучшем Интернет магазине с продажи мототехники,запчастей и экипировки в Украине.<br><br>
+                Интернет магазин SS88 Motoshop работает на отечественном рынке онлайн продаж с 2014 года предлагая своим клиентам широкий перечень высококачественной техники от лучших мировых производителей по доступным ценам, а именно: KTM, Yamaha, Suzuki, Honda, Husquarna, Husaberg, Kawasaki, Viper. Хотя, фактически на рынке продаж мы работаем с 2011 года. <br><br>
+                Вы решили Купить новенький шлем, мотоцикл или боты? То на сайте SS88 Motoshop Вы не только просто и легко сделаете свой заказ, но и значительно с экономите свои деньги. Поскольку цены на нашем сайте меньше от розничных цен, что в наших магазинах и в магазинах наших конкурентов. Вас интересует покупка нового мотоцикла для ребёнка? Консультанты Интернет магазина SS88 Motoshop с продажи связянной с мотоциклетным спортом с легкостью подберут Вам нужную технику и удокомплектует ёё необходимым тюниннгованным оборудованием. Хорошего, Вам, дня, дорогой клиент!
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <div>
+                   <p>(c) 2018 ПП "SS88 Motoshop"<br>ss88motoshop@mx.com</p>
+                </div>
+                <div>
+                    <ul class="footer_menu">
+                        <li><a class="go_to" href="#header">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="catalog.html">Прайс-лист</a></li>
+                        <li><a class="go_to" href="#header">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img id="footer_logo" src="images/footer_logo.png">
+                    <p id="by"><span id="foot">Разработка сайта</span> -<br>компания "Stegura - 100 points."</p>         
+                </div>    
+            </div>        
+        </footer>
+
+        <div class="backtotop">
+            <a class="go_to" href="#header"><img id="arrow" src="images/backtotop.png" width="50px"></a>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+        $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+        var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+            if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 900); // анимируем скролинг к элементу scroll_el
+            }
+            return false; // выключаем стандартное действие
+        });
+            });
+
+        jQuery(function(f){
+            var element = f('#arrow');
+            f(window).scroll(function(){
+                element['fade'+ (f(this).scrollTop() > 250 ? 'In': 'Out')](300);           
+            });
+        });
+    </script>
+</html>
